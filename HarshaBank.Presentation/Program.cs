@@ -19,12 +19,48 @@ namespace HarshaBank.Presentation
             {
                 Console.Write("Password:");
                 password = Console.ReadLine();
-
             }
 
             if (userName == "system" && password == "manager")
             {
-                Console.WriteLine("TO DO: Main menu here");
+                int mainMenuChoice = -1;
+
+                do
+                {
+                    Console.WriteLine("\n:: Main Menu ::");
+                    Console.WriteLine("1. Customers");
+                    Console.WriteLine("2. Accounts");
+                    Console.WriteLine("3. Funds Transfer");
+                    Console.WriteLine("4. Funds Transfer Statement");
+                    Console.WriteLine("5. Account Statement");
+                    Console.WriteLine("0. Exit");
+
+                    Console.Write("Enter choice:");
+                    mainMenuChoice = int.Parse(Console.ReadLine());
+
+                    switch (mainMenuChoice)
+                    {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        default:
+                            break;
+                    }
+                } while (mainMenuChoice != 0);
+
+
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid username or password");
             }
 
             Console.WriteLine("Thank you! Visit Again");
